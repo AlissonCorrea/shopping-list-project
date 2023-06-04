@@ -1,14 +1,46 @@
-# Welcome to your CDK TypeScript project
+# Shopping List Project
 
-This is a blank project for CDK development with TypeScript.
+Este é um projeto que utiliza CDK e TypeScript.
 
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
+## Pré-requisitos
 
-## Useful commands
+Antes de começar, certifique-se de ter o seguinte instalado em sua máquina:
 
-* `npm run build`   compile typescript to js
-* `npm run watch`   watch for changes and compile
-* `npm run test`    perform the jest unit tests
-* `cdk deploy`      deploy this stack to your default AWS account/region
-* `cdk diff`        compare deployed stack with current state
-* `cdk synth`       emits the synthesized CloudFormation template
+- Node.js (versão X.X.X)
+- AWS CLI configurada com suas credenciais de acesso
+
+## Configuração
+
+1. Clone o repositório para sua máquina local:
+
+   ```bash
+   git clone <URL_DO_REPOSITORIO>
+   
+2. Acesse o diretório do projeto:
+
+   ```bash
+   cd shopping-list-project
+   
+3. Instale as dependências do projeto:
+
+   ```bash
+   npm install
+
+4. Crie um arquivo .env na raiz do projeto e defina as seguintes variáveis de ambiente:
+
+   ```bash
+   ACCOUNT=XXXXXXXXXXXX
+   REGION=XXXXXXXX
+   ```
+  
+## Implantação
+
+1. Execute o seguinte comando para implantar o serviço:
+
+   ```bash
+   cdk deploy
+   ```
+   
+   O CDK criará e implantará os recursos necessários na AWS com base nas configurações fornecidas.
+   
+2. Após a implantação ser concluída, verifique o console para obter as informações relevantes sobre o serviço implantado.
